@@ -1,0 +1,41 @@
+@import '~antd/dist/antd.css';
+
+body {
+	background-color: #a5ddba;
+}
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* changes chromes autofill yellow */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.logout-button {
+	color: white;
+	background-color: red;
+}
+.logout-button:hover {
+	color: red;
+	background-color: white;
+	border-color: red;
+}
+
+.add-project-button {
+	background-color: #82ca9c;
+	color: white;
+	border-color: #82ca9c;
+}
+.add-project-button:hover {
+	background-color: white;
+	color: #82ca9c;
+	border-color: #82ca9c;
+}
+.project-card :hover {
+	background-color: lightgrey;
+	cursor: pointer;
+}

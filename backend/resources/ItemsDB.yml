@@ -1,0 +1,40 @@
+Type: 'AWS::DynamoDB::Table'
+Properties:
+  TableName: slbugs-items
+  KeySchema:
+    -
+      AttributeName: projectId
+      KeyType: HASH
+    -
+      AttributeName: dateCreated
+      KeyType: RANGE
+  AttributeDefinitions:
+    -
+      AttributeName: dateCreated
+      AttributeType: S
+    -
+      AttributeName: projectId
+      AttributeType: S
+    -
+      AttributeName: type
+      AttributeType: S
+    -
+      AttributeName: itemStatus
+      AttributeType: S
+  ProvisionedThroughput:
+    ReadCapacityUnits: 1
+    WriteCapacityUnits: 1
+  GlobalSecondaryIndexes:
+    - IndexName: type_status_index
+      KeySchema:
+        - AttributeName: type
+          KeyType: HASH
+        - AttributeName: itemStatus
+          KeyType: RANGE
+      Projection:
+        NonKeyAttributes:
+          - itemId
+        ProjectionType: INCLUDE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1

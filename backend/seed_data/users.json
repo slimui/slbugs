@@ -1,0 +1,9 @@
+[
+	{
+		"userId": "ENTER_USER_SUB_ID",
+		"email": "test@user.com",
+		"name": "Test User",
+		"siteRole": "Admin",
+		"projects": {}
+	}
+]

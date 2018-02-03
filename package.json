@@ -1,0 +1,6 @@
+{
+	"scripts": {
+		"deploy:home":
+			"aws s3 sync slbugs-site/ s3://slbugs.com --acl 'public-read'"
+	}
+}

@@ -1,0 +1,103 @@
+.account-validation {
+	border-bottom-left-radius: 12px;
+	border-top-left-radius: 12px;
+	border-width: 0;
+	margin-top: 80px;
+	padding: 10px;
+}
+
+.register-row {
+	height: 100vh;
+	align-items: center;
+	animation: fadein 0.5s;
+}
+
+.login-form {
+	max-width: 600px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	height: 70%;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.login-form input::selection {
+	background: #82ca9c;
+}
+
+.login-input > input:hover,
+input:focus {
+	border-color: #82ca9c !important;
+}
+.login-button,
+.login-button:focus {
+	width: 50%;
+	color: #82ca9c;
+	border-radius: 20px;
+	border-color: #82ca9c;
+}
+
+.login-button:hover {
+	color: white;
+	border-color: white;
+	background-color: #82ca9c;
+}
+
+.login-footer {
+	user-select: none;
+	padding: 6px;
+	padding-top: 10px;
+}
+.login-footer > a {
+	color: white;
+}
+.login-footer > a:hover {
+	text-decoration: underline;
+	color: white;
+	text-decoration: underline;
+}
+.login-footer > a:nth-child(1) {
+	float: left;
+}
+.login-footer > a:nth-child(2) {
+	float: right;
+}
+
+.login-header {
+	user-select: none;
+	font-family: Lato;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	background-color: #82ca9c;
+	height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	padding: 30px;
+}
+
+.register-button,
+.register-button:focus {
+	width: 80%;
+	color: #82ca9c;
+	border-radius: 20px;
+	border-color: #82ca9c;
+}
+
+.register-button:hover {
+	color: white;
+	border-color: white;
+	background-color: #82ca9c;
+}

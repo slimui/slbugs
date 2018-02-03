@@ -1,0 +1,76 @@
+html,
+body {
+	background-color: #a5ddba;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+a {
+	font-weight: bold;
+}
+
+.register-button {
+	background-color: #a5ddba;
+	transition: all 0.3s;
+	border: 0;
+	border-radius: 2px;
+	padding: 10px;
+}
+.register-button:hover {
+	background-color: #82ca9c;
+	color: white;
+}
+.register-button > a,
+.register-button > a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.card-footer {
+	padding: 5px;
+	text-align: center;
+}
+
+.github {
+	transition: color 0.3s;
+}
+.github:hover {
+	color: #82ca9c;
+	cursor: pointer;
+}
+.card-body {
+	padding: 20px;
+}
+
+.card {
+	/* margin: 0 auto; */
+	background-color: white;
+	width: 600px;
+
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-header {
+	user-select: none;
+	font-family: Lato;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	background-color: #82ca9c;
+	height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	padding: 30px;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}

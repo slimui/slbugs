@@ -1,0 +1,14 @@
+Type: 'AWS::DynamoDB::Table'
+Properties:
+  TableName: slbugs-projects
+  KeySchema:
+    -
+      AttributeName: projectId
+      KeyType: HASH
+  AttributeDefinitions:
+    -
+      AttributeName: projectId
+      AttributeType: S
+  ProvisionedThroughput:
+    ReadCapacityUnits: 1
+    WriteCapacityUnits: 1
