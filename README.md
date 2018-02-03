@@ -11,7 +11,7 @@
 
 # Demo
 
-[Demo @ slbugs.com](http://app.slbugs.com)
+[Demo @ slbugs.com](https://slbugs.com)
 
 # Instructions (local use)
 
