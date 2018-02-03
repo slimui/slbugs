@@ -13,5 +13,5 @@ plugins:
 
 custom:
   client:
-    bucketName: app.slbugs.com
+    bucketName: YOUR_BUCKET_NAME
     distributionFolder: build
