@@ -1,0 +1,6 @@
+slbugs-site/
+
+client/build/
+
+client/node_modules/
+backend/node_modules/
