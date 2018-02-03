@@ -2,9 +2,9 @@ service: slbugs
 
 custom:
   stage: '${opt:stage, self:provider.stage}'
-  developmentCognitoPool: 'arn:aws:cognito-idp:us-east-1:076993686282:userpool/us-east-1_yce5ctF8e'
-  stagingCognitoPool: 'arn:aws:cognito-idp:us-east-1:076993686282:userpool/us-east-1_yce5ctF8e'
-  productionCognitoPool: 'arn:aws:cognito-idp:us-east-1:076993686282:userpool/us-east-1_YdBa9pxmc'
+  developmentCognitoPool: 'DEV_POOL_ID'
+  stagingCognitoPool:  'STAGING_POOL_ID'
+  productionCognitoPool:  'PRODUCTION_POOL_ID'
   webpackIncludeModules: true
   serverless-offline:
     port: 4000
